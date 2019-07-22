@@ -19,14 +19,14 @@ class Collection extends Component {
 
   componentDidMount() {
 
-    let data = { collectionId: 1 };
+    let data = { collectionId: 3 };
 
     this.setState({ albums: this.props.getAlbums(data) });
 
   }
 
   removeAlbum(albumId) {
-    let data = { id: albumId, collection_id: 1 };
+    let data = { id: albumId, collection_id: 3 };
     this.props.removeAlbumFromCollection(data);
   }
 
