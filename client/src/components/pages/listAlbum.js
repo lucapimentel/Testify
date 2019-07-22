@@ -15,7 +15,7 @@ class listAlbum extends Component {
     }
 
     handleClick = (event) => {
-        let data = { id: event.target.value, collection_id: 1 };
+        let data = { id: event.target.value, collection_id: 3 };
         this.props.insertAlbumIntoCollection(data);
     }
 
